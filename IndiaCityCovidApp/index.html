@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>India Corona City Checker</title>
+    <link rel="stylesheet" href="./Asset/css/style.css">
+</head>
+<body>
+    <div class="app">
+        <h1>India Corona City Checker</h1>
+        <br>
+        <p>Enter an Indian city name</p>
+
+        <div class="input-box">
+            <input type="text" id="cityInput" placeholder="e.g. Mumbai, Delhi, Pune">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="result" class="card hidden">
+            <h2 id="placeName"></h2>
+            <div class="stats">
+                <div class="item">
+                    <span>Total Cases</span>
+                    <strong id="cases"></strong>
+                </div>
+                <div class="item">
+                    <span>Recovered</span>
+                    <strong id="recovered"></strong>
+                </div>
+                <div class="item">
+                    <span>Deaths</span>
+                    <strong id="deaths"></strong>
+                </div>
+                <div class="item">
+                    <span>Active</span>
+                    <strong id="active"></strong>
+                </div>
+            </div>
+        </div>
+
+        <p id="error" class="error"></p>
+    </div>
+
+    <script src="./Asset/js/script.js"></script>
+</body>
+</html>
